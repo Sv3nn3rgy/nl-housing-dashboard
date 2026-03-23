@@ -48,3 +48,17 @@ desktop.ini
 # Coverage reports
 htmlcov/
 .coverage
+
+
+
+pip install streamlit plotly pandas requests geopandas anthropic python-dotenv
+```
+
+**1. PDOK — gemeente boundary GeoJSON** (free, no key needed)
+```
+https://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=cbs_gemeente_2023_gegeneraliseerd&outputFormat=json
+```
+
+**2. CBS StatLine API — average housing prices per gemeente** (free, no key needed)
+```
+https://opendata.cbs.nl/ODataApi/odata/83625NED/TypedDataSet
